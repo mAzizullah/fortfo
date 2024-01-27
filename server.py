@@ -54,7 +54,7 @@ def my_home():
 #     return render_template('about.html')  
 
  
-# if we look to above for every url we have created a function it is repeated work. just one function do that.
+# if we look at the above for every URL we have created a function it is repeated work. just one function does that.
 @app.route('/<string:page_name>')
 def html_page(page_name):
     return render_template(page_name)  
@@ -69,7 +69,7 @@ def html_page(page_name):
     
 
 def write_to_csv(data):
-    with open('web_server/database.csv', mode='a', newline='') as csv_database:# newline='' is used to have new record in new line of csv file
+    with open('fortfo/database.csv', mode='a', newline='') as csv_database:# newline='' is used to have a new record in new line of CSV file
         name = data['name']
         number = data['number']
         email = data['email']
